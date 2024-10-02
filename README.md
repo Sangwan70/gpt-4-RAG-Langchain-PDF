@@ -20,7 +20,7 @@ git clone [github https url]
 
 2. Install packages
 
-First run `npm install yarn -g` to install yarn globally (if you haven't already).
+First run `npm install yarn -g` to install yarn globally.
 
 Then run:
 
@@ -37,12 +37,8 @@ After installation, you should now see a `node_modules` folder.
 
 ```
 OPENAI_API_KEY=
-
 PINECONE_API_KEY=
-PINECONE_ENVIRONMENT=
-
 PINECONE_INDEX_NAME=
-
 ```
 
 - Visit [openai](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key) to retrieve API keys and insert into your `.env` file.
@@ -89,7 +85,3 @@ In general, keep an eye out in the `issues` and `discussions` section of this re
 - Make sure your pinecone namespace is in lowercase.
 - Pinecone indexes of users on the Starter(free) plan are deleted after 7 days of inactivity. To prevent this, send an API request to Pinecone to reset the counter before 7 days.
 - Retry from scratch with a new Pinecone project, index, and cloned repo.
-
-## Credit
-
-Frontend of this repo is inspired by [langchain-chat-nextjs](https://github.com/zahidkhawaja/langchain-chat-nextjs)
